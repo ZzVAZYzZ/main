@@ -1,0 +1,79 @@
+/* Add */
+@font-face {
+    font-family: fontvidu;
+    src: url('https://fonts.gstatic.com/s/permanentmarker/v7/9vYsg5VgPHKK8SXYbf3sMsW72xVeg1938eUHStY_AJ4.woff2');
+}
+/* Global */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #0a2a43;
+    min-height: 2000px;
+}
+/* Main */
+section{
+    position: relative;
+    width: 100%;
+    height: 1000px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 5px solid #f1c40f;
+}
+section ::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 10000;
+
+}
+section ::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+    mix-blend-mode: color;
+}
+section img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+section #middle{
+    z-index: 2;
+}
+
+section #start{
+    z-index: 3;
+}
+section #text{
+    top: 0;
+    position: relative;
+    color: #eccc68;
+    font-size: 5em;
+    z-index: 2;
+    margin-bottom: 9em;
+    font-family: fontvidu, sans-serif;
+    text-align: center;
+    margin-right: 50px;
+}
+section #sun{
+    width: 500px;
+    height: 600px;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
