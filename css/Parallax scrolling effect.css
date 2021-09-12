@@ -13,6 +13,7 @@ body{
     min-height: 2000px;
 }
 /* Main */
+/* Banner */
 section{
     position: relative;
     width: 100%;
@@ -21,7 +22,7 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 5px solid #f1c40f;
+    border-bottom: 10px solid #f1c40f;
 }
 section ::before{
     content: '';
@@ -65,14 +66,20 @@ section #text{
     color: #eccc68;
     font-size: 5em;
     z-index: 2;
-    margin-bottom: 9em;
+    margin-bottom: 3em;
     font-family: fontvidu, sans-serif;
     text-align: center;
     margin-right: 50px;
+    letter-spacing: 0.1em;
+    text-shadow: 0 0 10px #535c68,
+                0 0 20px #535c68,
+                0 0 40px #535c68,
+                0 0 80px #535c68,
+                0 0 120px #535c68;
 }
 section #sun{
-    width: 500px;
-    height: 600px;
+    width: 400px;
+    height: 700px;
     z-index: 1;
     top: 0;
     left: 0;
