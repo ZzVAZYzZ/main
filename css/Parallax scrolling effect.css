@@ -7,12 +7,54 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
 }
 body{
-    background: #0a2a43;
-    min-height: 2000px;
+    background: #0a3d62;
+    min-height: 3000px;
 }
-/* Main */
+.clear{
+    clear: both;
+}
+/* Navbar */
+header{
+    
+}
+header ul{
+    padding-left: 30%;
+    width: 100%;
+    padding-top: 10px;
+    display: flex;
+    list-style: none;
+    position: fixed;
+    z-index: 4;
+    
+}
+header ul a li{
+    width: 150px;
+    padding: 15px 0;
+    /* border-bottom: 2px solid #dff9fb; */
+    text-align: center;
+    margin: 0 15px;
+    color: #dff9fb;
+    font-size: clamp(1em,1.5vw,1.5em);
+}
+header ul li:hover{
+    text-shadow: 0 0 10px #e67e22,
+                0 0 20px #e67e22,
+                0 0 40px #e67e22,
+                0 0 80px #e67e22,
+                0 0 120px #e67e22;
+    transition: ease-in 0.5s;
+    
+}
+.scrolled{
+    width: 100%;
+    height: 80px;
+    background: rgba(22,22,22,.9);
+    transition: 0.3s ease-in-out;
+}
 /* Banner */
 section{
     position: relative;
@@ -22,7 +64,7 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 10px solid #f1c40f;
+    /* border-bottom: 10px solid #f6e58d; */
 }
 section ::before{
     content: '';
@@ -63,13 +105,12 @@ section #start{
 section #text{
     top: 0;
     position: relative;
-    color: #eccc68;
-    font-size: 5em;
+    color: #dff9fb;
+    font-size: 4em;
     z-index: 2;
     margin-bottom: 3em;
-    font-family: fontvidu, sans-serif;
+    font-family: trajan,fontvidu;
     text-align: center;
-    margin-right: 50px;
     letter-spacing: 0.1em;
     text-shadow: 0 0 10px #535c68,
                 0 0 20px #535c68,
@@ -83,4 +124,11 @@ section #sun{
     z-index: 1;
     top: 0;
     left: 0;
+}
+
+/* Introduce */
+.introduce_wrapper{
+    width: 100%;
+    height: 1000px;
+    background-color: #dff9fb;
 }
