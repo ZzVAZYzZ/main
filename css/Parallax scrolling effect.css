@@ -39,6 +39,7 @@ header ul a li{
     margin: 0 15px;
     color: #dff9fb;
     font-size: clamp(1em,1.5vw,1.5em);
+    font-family: fontvidu;
 }
 header ul li:hover{
     text-shadow: 0 0 10px #e67e22,
@@ -129,6 +130,6 @@ section #sun{
 /* Introduce */
 .introduce_wrapper{
     width: 100%;
-    height: 1000px;
-    background-color: #dff9fb;
+    height: 2000px;
+    background-color: #c7ecee;
 }
