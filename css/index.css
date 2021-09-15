@@ -17,6 +17,23 @@ body{
 .clear{
     clear: both;
 }
+
+/* Srcollbar*/
+::-webkit-scrollbar{
+    width: 12px;
+    z-index: 5;
+    background: #34495e;
+    
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(transparent,#c7ecee);
+    border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(transparent,#e67e22);
+}
+
+/* Navbar */
 /* Navbar */
 header{
     
@@ -39,7 +56,7 @@ header ul a li{
     margin: 0 15px;
     color: #dff9fb;
     font-size: clamp(1em,1.5vw,1.5em);
-    font-family: fontvidu;
+    font-family: 'Anton';
 }
 header ul li:hover{
     text-shadow: 0 0 10px #e67e22,
@@ -53,7 +70,7 @@ header ul li:hover{
 .scrolled{
     width: 100%;
     height: 80px;
-    background: rgba(22,22,22,.9);
+    background: #2d3436;
     transition: 0.3s ease-in-out;
 }
 /* Banner */
@@ -65,7 +82,7 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border-bottom: 10px solid #f6e58d; */
+    /* border-bottom: 10px solid #eccc68; */
 }
 section ::before{
     content: '';
@@ -127,9 +144,49 @@ section #sun{
     left: 0;
 }
 
-/* Introduce */
-.introduce_wrapper{
+/* News */
+#news_wrapper{
     width: 100%;
-    height: 2000px;
+    height: 1000px;
     background-color: #c7ecee;
+}
+.content_wrapper {
+    width: 100%;
+    margin: 0 auto;
+    height: 150px;
+    padding-top: 3em;
+    text-align: center;
+    font-size: 2em;
+    font-family: sans-serif;
+    color: #2d3436;
+}
+
+/* Event */
+#event_wrapper{
+    width: 100%;
+    height: 1000px;
+    background-color: #c7ecee;
+}
+
+/* Library */
+#library_wrapper{
+    width: 100%;
+    height: 1000px;
+    background-color: #c7ecee;
+}
+
+/* Footer */
+#footer_wrapper{
+    width: 100%;
+    height: 300px;
+    background-color: #2d3436;
+
+}
+
+#footer_wrapper > .content_wrapper{
+    width: 100%;
+    padding-top: 1em;
+    height: 80px;
+    font-size: 1.5em;
+    color: #c7ecee;
 }
