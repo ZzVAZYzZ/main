@@ -1,4 +1,4 @@
-const header = document.querySelector("header ul");
+const header = document.querySelector("header nav");
 
 window.addEventListener("scroll", function(){
     if (window.scrollY >= 920){
