@@ -258,7 +258,9 @@ footer{
                 0 0 80px #fff,
                 0 0 120px #fff;
 }
-
+/* Responsive */
+/* PC */
+/* moble */
 @media (max-width: 991px) {
     /* Navbar */
     #menu-toggle{
@@ -300,7 +302,7 @@ footer{
     }
     /* banner */
     section{
-        /* display: none; */
+        display: none;
         width: 100%;
         height: 60vh;
     }
