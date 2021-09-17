@@ -42,10 +42,12 @@ header{
     z-index: 4;
 }
 header nav{
+    padding-top: 10px;
     width: 100%;
+    position: absolute;
 }
 header nav ul{
-    padding-top: 10px;
+    margin: 10px 20px;
     width: 60%;
     display: flex;
     margin: 0 auto;
@@ -71,21 +73,23 @@ header ul li:hover{
                 0 0 120px #e67e22;
     transition: ease-in 0.5s;
 } 
-.menu-toggle{
-    color: #333;
+#menu-toggle{
+    width: 25%;
+    height: 50px;
+    color: #6ab04c;
     float: right;
     line-height: 50px;
-    font-size: 24px;
+    font-size: 25px;
     cursor: pointer;
     display: none;
-    margin-right: 20px;
+    text-align: center;
 }
-header .menu-toggle:hover{
-    text-shadow: 0 0 10px #e67e22,
-                0 0 20px #e67e22,
-                0 0 40px #e67e22,
-                0 0 80px #e67e22,
-                0 0 120px #e67e22;
+header #menu-toggle:hover{
+    text-shadow: 0 0 10px #dff9fb,
+                0 0 20px #dff9fb,
+                0 0 40px #dff9fb,
+                0 0 80px #dff9fb,
+                0 0 120px #dff9fb;
     transition: ease-in 0.5s;
 } 
 .scrolled{
@@ -103,25 +107,6 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-section ::before{
-    content: '';
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 100px;
-    z-index: 1000;
-
-}
-section ::after{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 10000;
-    mix-blend-mode: color;
 }
 section img{
     position: absolute;
@@ -276,25 +261,32 @@ footer{
 
 @media (max-width: 991px) {
     /* Navbar */
-    .menu-toggle{
+    #menu-toggle{
         display: block;
         position: relative;
+        z-index: 5;
     }
     header nav{
-        width: 100%;
-        height: calc(80vh);
-        top: 0;
-        left: 0;
+        width: 25%;
+        /* height: calc(80vh); */
+        float: right; 
+        height: 120vh;
         transition: 0.5s;
         background: #333;
         display: none;
+        top: 0;
+        right: 0;
     }
     header nav ul{
         display: block;
         text-align: center;
+        overflow-y: auto;
+        margin-top: 30px;
     }
     .scrolled{
-        height: calc(80vh);
+        /* height: calc(80vh); */
+        width: 25%;
+        height: 120vh;
         background: #333;
     }
     header nav ul li{
@@ -303,8 +295,17 @@ footer{
     header nav ul li a{
         padding: 30px 0;
     }
+    header nav ul li a{
+        font-size: clamp(10px,1vw,30px);
+    }
     /* banner */
     section{
-        display: none;
+        /* display: none; */
+        width: 100%;
+        height: 60vh;
+    }
+    section img{
+        width: 100%;
+        height: 100%;
     }
 }
