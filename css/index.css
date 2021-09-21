@@ -99,14 +99,6 @@ header #menu-toggle:hover{
     transition: 0.3s ease-in-out;
 }
 /* Banner */
-#mobile_banner{
-    width: 100%;
-    height: 100vh;
-    background-image: url(../img/avatar.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: none;
-}
 section{
     position: relative;
     width: 100%;
