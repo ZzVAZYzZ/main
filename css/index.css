@@ -62,7 +62,7 @@ header nav ul li a{
     line-height: 50px;
     color: #dff9fb;
     text-decoration: none;
-    font-family: 'Anton';
+    font-family: 'Anton',Arial,sans-serif;
     display: block;
 }
 header ul li:hover{
@@ -76,7 +76,7 @@ header ul li:hover{
 #menu-toggle{
     width: 25%;
     height: 50px;
-    color: #6ab04c;
+    color: #fdcb6e;
     float: right;
     line-height: 50px;
     font-size: 25px;
@@ -125,22 +125,6 @@ section #middle{
 section #start{
     z-index: 3;
 }
-section #text{
-    top: 0;
-    position: relative;
-    color: #dff9fb;
-    font-size: clamp(1em,5vw,4em);
-    z-index: 2;
-    margin-bottom: 3em;
-    font-family: trajan,fontvidu;
-    text-align: center;
-    letter-spacing: 0.1em;
-    text-shadow: 0 0 10px #535c68,
-                0 0 20px #535c68,
-                0 0 40px #535c68,
-                0 0 80px #535c68,
-                0 0 120px #535c68;
-}
 section #sun{
     width: 400px;
     height: 700px;
@@ -148,7 +132,13 @@ section #sun{
     top: 0;
     left: 0;
 }
-
+section #text{
+    width: 90%;
+    height: 90%;
+    top: 0;
+    left: 5%;
+    z-index: 2;
+}
 /* News */
 #news_wrapper{
     width: 100%;
@@ -158,11 +148,11 @@ section #sun{
 .content_wrapper {
     width: 100%;
     margin: 0 auto;
-    height: 150px;
+    height: 15%;
     padding-top: 3em;
     text-align: center;
     font-size: clamp(15px,3vw,35px);
-    font-family: sans-serif;
+    font-family: 'Anton',sans-serif;
     color: #2d3436;
 }
 
@@ -172,7 +162,39 @@ section #sun{
     height: 1000px;
     background-color: #c7ecee;
 }
-
+.event_info_wrapper{
+    width: 80%;
+    height: 85%;
+    margin: 0 auto;
+    padding-top: 1em;
+}
+.event_box{
+    width: 80%;
+    height: 15%;
+    background-color: #333;
+    margin: 4em auto;
+    border-top-right-radius: 50px;
+    overflow: hidden;
+    box-shadow: 0 0 10px #535c68,
+                0 0 20px #535c68,
+                0 0 40px #535c68;
+}
+.event_box h2{
+    text-align: center;
+    margin: auto;
+    padding-top: 50px;
+    font-size: clamp(15px,2vw,30px);
+    color: #c7ecee;
+}
+.event_box:hover{
+    border-top-right-radius: 0;
+    border-top:  solid 1px;
+    transition: ease-in-out 0.5s;
+    cursor: pointer;
+}
+.event_box:hover h2{
+    color: #dff9fb;
+}
 /* Library */
 #library_wrapper{
     width: 100%;
