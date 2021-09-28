@@ -37,7 +37,7 @@ body{
 header{
     width: 100%;
     top: 0;
-    left: 0;
+    right: 0;
     position: fixed;
     z-index: 4;
 }
@@ -83,6 +83,8 @@ header ul li:hover{
     cursor: pointer;
     display: none;
     text-align: center;
+    position: relative;
+    z-index: 5;
 }
 header #menu-toggle:hover{
     text-shadow: 0 0 10px #dff9fb,
@@ -127,7 +129,7 @@ section #start{
 }
 section #sun{
     width: 400px;
-    height: 700px;
+    height: clamp(500px,60vw,700px);
     z-index: 1;
     top: 0;
     left: 0;
@@ -191,6 +193,7 @@ section #text{
     border-top:  solid 1px;
     transition: ease-in-out 0.5s;
     cursor: pointer;
+    opacity: 0.8;
 }
 .event_box:hover h2{
     color: #dff9fb;
@@ -234,12 +237,11 @@ footer{
 }
 .contact_info ul li{
     display: inline;
-    padding:  20px;
+    padding:  10px;
 }
 .contact_info ul li a{
     font-size: clamp(5px,2vw,20px);
     color: #c7ecee;
-    margin: 0 25px;
 }
 .contact_info ul li .youtube:hover {
     color: #c23616;
@@ -287,8 +289,6 @@ footer{
     /* Navbar */
     #menu-toggle{
         display: block;
-        position: relative;
-        z-index: 5;
     }
     header nav{
         width: 25%;
