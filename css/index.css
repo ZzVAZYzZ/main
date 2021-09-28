@@ -157,7 +157,19 @@ section #text{
     font-family: 'Anton',sans-serif;
     color: #2d3436;
 }
-
+.news_image {
+    width: 80vw;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 100px;
+    position: relative;
+}
+.news_image img{
+    width: 100%;
+    height: 80%;
+    opacity: 0.5;
+    position: absolute;
+}
 /* Event */
 #event_wrapper{
     width: 100%;
