@@ -9,15 +9,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <title>AGE OF EMPIRE IV VIETNAM</title>
     <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/night effect.css">
+    <!-- <link rel="stylesheet" href="./css/night effect.css"> -->
     <script src="https://kit.fontawesome.com/f6031842b5.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- Navbar -->
     <header>
-        <div id="menu-toggle" onclick="sclick()"><i class="fas fa-bars"></i></div>
-        <nav>
+        <div id="menu-toggle"><i class="fas fa-bars" id="open_icon" onclick="sclick()"></i><i class="fas fa-times" id="close_icon" onclick="xclick()"></i></div>
+        <nav id="nav-toggle">
             <ul>
                 <li><a href="#">TRANG CHỦ</a></li>
                 <li><a href="#introduce_wrapper">GIỚI THIỆU</a></li>
@@ -30,10 +30,10 @@
     <!-- Banner -->
     <section>
         <img id="start" src="./img/carousel_start.webp">
-        <img id="sun" src="./img/sun.webp">
-        <img id="middle" src="./img/carousel_middle.webp">
-        <img id="text" src="./img/AOEmoi2.webp">
-        <img id="end" src="./img/carousel_end.webp">
+        <img id="sun"  src="./img/sun.webp">
+        <img id="middle"  src="./img/carousel_middle.webp">
+        <img id="text"  src="./img/AOEmoi2.webp">
+        <img id="end"  src="./img/carousel_end.webp">
     </section>
 
     <!-- Introduce -->
@@ -101,7 +101,7 @@
     </footer>
     <script type="text/javascript" src="./js/Parallax scrolling effect.js"></script>
     <script type="text/javascript" src="./js/Sticky scrolling effect.js"></script>
-    <script type="text/javascript" src="./js/Jquery toggle dropdown menu.js"></script>
+    <!-- <script type="text/javascript" src="./js/Jquery toggle dropdown menu.js"></script> -->
     <script type="text/javascript" src="./js/menu-click.js"></script>
 </body>
 </html>
