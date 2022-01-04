@@ -17,13 +17,20 @@
         <div id="menu-toggle"><i class="fas fa-bars" id="open_icon" onclick="sclick()"></i><i class="fas fa-times" id="close_icon" onclick="xclick()"></i></div>
         <nav id="nav-toggle">
             <ul>
-                <li><a href="#">TRANG CHỦ</a></li>
-                <li><a href="#introduce_wrapper">GIỚI THIỆU</a></li>
-                <li><a href="#event_wrapper">GIẢI ĐẤU</a></li>
-                <li><a href="#library_wrapper">THƯ VIỆN</a></li>
+                <li><a href="#" id="HOMEPAGE_key">TRANG CHỦ</a></li>
+                <li><a href="#introduce_wrapper" id="INTRODUCE_key">GIỚI THIỆU</a></li>
+                <li><a href="#event_wrapper" id="EVENT_key">GIẢI ĐẤU</a></li>
+                <li><a href="#library_wrapper" id="LIBRARY_key">THƯ VIỆN</a></li>
             </ul>
         </nav>
-        
+        <div class="lang_menu">
+            <h2>LANGUAGE</h2>
+            <h3 id="language_key">VIETNAMESE</h3>
+            <div class="lang_submenu">
+                    <li><a id="VIETNAMESE_key">VIETNAMESE</a></li>
+                    <li><a id="ENGLISH_key">ENGLISH</a></li>
+            </div>
+        </div>
     </header>
     <!-- Banner -->
     <section>
@@ -37,32 +44,36 @@
     <!-- Introduce -->
       <div id="introduce_wrapper">
         <div class="content_wrapper">
-            <h2>GIỚI THIỆU</h2>
+            <h2 id="INTRODUCE_key1">GIỚI THIỆU</h2>
         </div>
         <!-- <div class="introduce_image"><img src="./img/tower.png" alt="English"></div> -->
         <div class="introduce_box">
             <h2>AGE OF EMPIRE IV VIETNAM</h2>
             <br>
-            <p>
+            <p id="INTRODUCE_TEXT_key">
+
                 Cộng đồng Đế Chế 4 lớn nhất Việt Nam được thành lập từ tháng 6 năm 2021 trên Facebook dưới tên gọi Age of Empires IV Việt Nam ,AOE4 là một tựa game chiến thuật thời gian thật giữa cuộc chiến của các nền văn minh khác nhau
                 <br><br>
                 AOE4VN được lập ra để kết nối đến những game thủ việt nam,tạo ra 1 cộng đồng những người yêu thích AOE4,đây là nơi để mọi người có thể chia sẻ chiến thuật và lưu trữ thông tin của AOE4.
                 <br><br>
                 Đế chế 4 Việt Nam luôn sẵn sàng chào đón các thành viên mới, dù là nhập môn tựa game RTS hay là lão làng từ các tựa game RTS khác chuyển sang
                 <br><br>
+            </p>
+            <span class="introduce_box_buy">
                 <span class="introduce_box_buy1">
-                    Nơi mua game: <a href="https://store.steampowered.com/app/1466860/Age_of_Empires_IV/"><i class="fab fa-steam"><b> STEAM</b></i></a> 
+                    <span id="introduce_box_buy_text">Nơi mua game: </span><a href="https://store.steampowered.com/app/1466860/Age_of_Empires_IV/"><i class="fab fa-steam"><b> STEAM</b></i></a> 
                 </span> 
                 <span class="introduce_box_buy2">
                     <a href="https://www.xbox.com/en-us/games/store/age-of-empires-iv-4k-hdr-video-pack/9nth1k5rt43p"><i class="fab fa-xbox"><b> XBOX</b></i></a>
                 </span> 
-            </p>
+            </span>
+                
         </div>
     </div>
     <!-- Event -->
     <div id="event_wrapper">
         <div class="content_wrapper">
-            <h2>GIẢI ĐẤU</h2>
+            <h2 id="EVENT_key1">GIẢI ĐẤU</h2>
         </div>
         <div class="event_info_wrapper">
             <div class="event_box">
@@ -82,7 +93,7 @@
     <!-- Library -->
     <div id="library_wrapper">
         <div class="content_wrapper">
-            <h2>THƯ VIỆN</h2>
+            <h2 id="LIBRARY_key1">THƯ VIỆN</h2>
         </div>
 
     </div>
@@ -90,7 +101,7 @@
     <footer>
         <div id="contact">
             <div class="contact_info">
-                <h1>LIÊN HỆ</h1>
+                <h1 id="CONTACT_key">LIÊN HỆ</h1>
                 <ul>
                     <li class="facebook"><a href="https://www.facebook.com/groups/823865431666418" target="_blank" class="facebook"><i class="fab fa-facebook-square"></i> FACEBOOK</a></li>
                     <li class="discord"><a href="https://discord.gg/ArAraqYu" target="_blank" class="discord"><i class="fab fa-discord" ></i> DISCORD</a></li>
@@ -103,5 +114,6 @@
     <script type="text/javascript" src="./js/Parallax scrolling effect.js"></script>
     <script type="text/javascript" src="./js/Sticky scrolling effect.js"></script>
     <script type="text/javascript" src="./js/menu-click.js"></script>
+    <script type="text/javascript" src="./js/Translator.js"></script>
 </body>
 </html>

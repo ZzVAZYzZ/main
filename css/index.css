@@ -65,7 +65,7 @@ header ul li:hover{
                 0 0 40px #e67e22,
                 0 0 80px #e67e22,
                 0 0 120px #e67e22;
-    transition: ease-in 0.5s;
+    transition: ease-in 0.1s;
 } 
 #menu-toggle{
     width: 25%;
@@ -86,8 +86,63 @@ header #menu-toggle:hover{
                 0 0 40px #dff9fb,
                 0 0 80px #dff9fb,
                 0 0 120px #dff9fb;
-    transition: ease-in 0.5s;
+    transition: ease-in 0.1s;
 } 
+.lang_menu{
+    top: 0;
+    right: 50px;
+    width: 150px;
+    height: 80px;
+    position: absolute;
+    color: #dff9fb;
+    text-align: center;
+    padding-top: 15px;
+    cursor: pointer;
+}
+.lang_menu h2{
+    font-size: clamp(13px,1.5vw,20px);
+}
+#lang_menu h3{
+    font-size: clamp(13px,1.5vw,16px);
+}
+.lang_submenu{
+    width: 100%;
+    height: 75px;
+    background-color:#333;
+    display: none;
+}
+.lang_submenu li{
+    margin: 20px 0;
+    list-style: none;
+}
+.lang_submenu li a{
+    font-size: clamp(13px,1.5vw,16px);
+    color: #dff9fb;
+    text-align: center;
+}
+.lang_menu:hover{
+    transition: ease-in 0.1s;  
+    background: #333;
+}
+.lang_menu:hover h2,.lang_menu:hover h3{
+    text-shadow: 0 0 10px #e67e22,
+                0 0 20px #e67e22,
+                0 0 40px #e67e22,
+                0 0 80px #e67e22,
+                0 0 120px #e67e22;
+    transition: ease-in 0.1s;
+}
+.lang_menu:hover .lang_submenu{
+    display: block;
+}
+.lang_submenu li a:hover{
+    text-shadow: 0 0 10px #e67e22,
+    0 0 20px #e67e22,
+    0 0 40px #e67e22,
+    0 0 80px #e67e22,
+    0 0 120px #e67e22;
+    transition: ease-in 0.1s;
+}
 .scrolled{
     width: 100%;
     height: 80px;
@@ -163,6 +218,9 @@ section #text{
     font-size: clamp(25px,4vw,50px);;
 }
 .introduce_box p{
+    font-size: clamp(10px,4vw,25px);
+}
+.introduce_box_buy{
     font-size: clamp(10px,4vw,25px);
 }
 .introduce_box_buy1{
@@ -355,7 +413,6 @@ footer{
         margin-top: 40px;
     }
     .scrolled{
-        /* height: calc(80vh); */
         width: 25%;
         height: 120vh;
         background: #333;
@@ -365,6 +422,10 @@ footer{
     }
     header nav ul li a{
         font-size: clamp(10px,1vw,30px);
+    }
+    .lang_menu{
+        top : 0;
+        left: 0;
     }
     /* banner */
     section{
