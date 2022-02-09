@@ -1,3 +1,4 @@
+// PC
 // VIETNAMESE
 document.getElementById("VIETNAMESE_key").onclick = function(){
     document.getElementById("language_key").innerHTML="VIETNAMESE";
@@ -36,3 +37,8 @@ document.getElementById("ENGLISH_key").onclick = function(){
     // contact
     document.getElementById("CONTACT_key").innerHTML="CONTACT";
 };
+
+// MOBILE
+document.getElementById("lang_mobile_menu").onclick = function(){
+    
+}
