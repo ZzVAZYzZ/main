@@ -143,24 +143,6 @@ header #menu-toggle:hover{
     0 0 120px #e67e22;
     transition: ease-in 0.1s;
 }
-#lang_mobile_menu{
-    width: 50px;
-    height: 50px;
-    margin-left: 30px;
-    cursor: pointer;
-    color: #333;
-}
-.lang_mobile_menu_icon{
-    font-size: 40px;
-}
-#lang_mobile_menu:hover{
-    text-shadow: 0 0 10px #e67e22,
-    0 0 20px #e67e22,
-    0 0 40px #e67e22,
-    0 0 80px #e67e22,
-    0 0 120px #e67e22;
-    transition: ease-in 0.1s;
-}
 .scrolled{
     width: 100%;
     height: 80px;
@@ -318,7 +300,86 @@ section #text{
     height: 1000px;
     background-color: #c7ecee;
 }
-
+.tv_header {
+    font-size: clamp(15px,4vw,25px);;
+}
+.tv_header ul{
+    padding-top: 70px;
+    display: flex;
+}
+.tv_header ul li{
+    width: 150px;
+    height: auto;
+    margin: auto;
+    list-style: none;
+    text-align: center;
+    border: 3px solid #333;
+    border-radius: 50px;
+    background-color: #333;
+    color: #dff9fb;
+    cursor: pointer;
+}
+.tv_header ul li:hover{
+    border-radius: 0;
+    transition: ease-in 0.1s;
+}
+.tv_header ul li:hover a{
+    text-shadow: 0 0 10px #e67e22,
+                 0 0 20px #e67e22,
+                 0 0 40px #e67e22,
+                 0 0 80px #e67e22,
+                 0 0 120px #e67e22;
+    transition: ease-in 0.1s;
+}
+#tv_main {
+    width: 80%;
+    height: 600px;
+    margin: 100px auto;
+    /* background: red; */
+}
+#civ_tv,#map_tv,#basic_tv,#techtree_tv,#tactics_tv {
+    margin: 0 auto;
+}
+#civ_tv .civ_English{
+    width: 100%;
+    height: 75px;
+    background: white;
+}
+#civ_tv .civ_French{
+    width: 100%;
+    height: 75px;
+    background: blue;
+}
+#civ_tv .civ_HolyRomanEmpire{
+    width: 100%;
+    height: 75px;
+    background: Yellow;
+}
+#civ_tv .civ_Rus{
+    width: 100%;
+    height: 75px;
+    background: Red;
+}
+#civ_tv .civ_Abbasid{
+    width: 100%;
+    height: 75px;
+    background: black;
+}
+#civ_tv .civ_Chinese{
+    width: 100%;
+    height: 75px;
+    background: orange;
+}
+#civ_tv .civ_Mongols{
+    width: 100%;
+    height: 75px;
+    background: Brown;
+}
+#civ_tv .civ_Delhi{
+    width: 100%;
+    height: 75px;
+    background: Green;
+}
 /* Footer */
 footer{
     height: 250px;
